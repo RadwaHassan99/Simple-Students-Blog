@@ -14,14 +14,18 @@ To view the UI design of this project, follow these steps:
 
 
 <div style="display:flex; justify-content:center;">
-  <img src="https://user-images.githubusercontent.com/63107268/234386557-ef8737fe-0671-4d45-a1e6-b4d2a846458a.png" width="250" height="700" alt="Home">
+  <img src="https://user-images.githubusercontent.com/63107268/235211827-e5910e0a-f2b1-4a6f-ae7f-fb11f82a169e.png" width="250" height="700" alt="Home">
 </div>
 
 <div style="display:flex; justify-content:center;">
-    <img src="https://user-images.githubusercontent.com/63107268/234386549-ed39bef8-ac1e-4e82-b6fb-1e6a557d4b88.png" width="250" height="250" alt="Table of Students">
-  <img src="https://user-images.githubusercontent.com/63107268/234386545-e1d75e23-43c2-4108-948c-754d999e6f93.png" width="250" height="250" alt="Student Card">
-  <img src="https://user-images.githubusercontent.com/63107268/234386535-d1c3478b-e202-434a-845d-47a724723161.png" width="250" height="250" alt="Register new Student with validation">
-  <img src="https://user-images.githubusercontent.com/63107268/234386526-bfed8a45-f076-4379-bb62-66dfa3d39997.png" width="250" height="250" alt="404 not found">
+    <img src="https://user-images.githubusercontent.com/63107268/235211827-e5910e0a-f2b1-4a6f-ae7f-fb11f82a169e.png" width="250" height="250" alt="Table of Students">
+  <img src="https://user-images.githubusercontent.com/63107268/235212012-46b1eeb4-d42e-4cda-b4c8-3ed27659dfd1.png" alt="Student Card">
+  <img src="https://user-images.githubusercontent.com/63107268/235212046-56858a8d-8b3c-436e-9f75-74f97024a2a8.png" width="250" height="250" alt="Register new Student with validation">
+  <img src="https://user-images.githubusercontent.com/63107268/235212125-41a72025-aec7-481b-a071-04bdb80d6d76.png" width="250" height="250" alt="404 not found">
 </div>
+
+
+
+
 
 
