@@ -1,0 +1,17 @@
+
+:root {
+  --page-header-h: 35vh;
+  --page-header-mh: 250px;
+  --page-header-pb: calc(var(--page-header-mh) * 0.15);
+  --page-header-list-top: calc(var(--page-header-pb) * -1);
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+
+}
+
+

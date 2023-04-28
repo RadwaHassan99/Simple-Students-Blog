@@ -1,0 +1,35 @@
+<section class="container-3d" style="margin: 10% auto;">
+  <div class="card p-3 w-50 mx-auto shadow">
+    <h2 class="text-center bold" style="color: #09363f">Students Table</h2>
+
+    <table class="table align-middle mb-0 bg-white">
+      <thead style="background-color: #cde4e9;">
+        <tr>
+          <th class="p-3">Name</th>
+          <th class="p-3">Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students">
+          <td>
+            <div class="d-flex align-items-center">
+              <img
+                src="../../../assets/images/boy.png"
+                alt=""
+                style="width: 45px; height: 45px"
+                class="rounded-circle"
+              />
+              <div class="ms-3">
+                <p class="fw-bold mb-1">{{ student.name }}</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <p class="fw-normal mb-1">{{ student.age }} year</p>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</section>
