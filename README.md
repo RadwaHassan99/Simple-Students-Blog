@@ -18,11 +18,11 @@ To view the UI design of this project, follow these steps:
 1. Clone the repository
 2. Install the dependencies with `npm install`
 3. Run the application with `ng serve`
-4. json-server --watch Database/data.json
+4. Eun the json server with `json-server --watch Database/data.json`
 
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center;">
-  <div style="flex: 1; max-width: 250px;">
+  <div style="max-width: 250px;">
     <img src="https://user-images.githubusercontent.com/63107268/235277461-c730590d-a483-47cd-a4f1-abf595c17985.png" width="250" height="700" alt="Home">
   </div>
   <div style="display: flex; flex-wrap: wrap; flex: 1;">
