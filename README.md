@@ -1,7 +1,7 @@
 # Angular Students Blog UI
 
 ## Introduction
-This project is a student management website use 'Reactive Routing' and 'json sever' for a students blog created with Angular.
+This project is a student management website use `Reactive Routing` and `json sever` for a students blog created with Angular.
 
 ## Features
 1. Table with pagination of all students available in the api
