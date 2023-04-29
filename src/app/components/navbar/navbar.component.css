@@ -7,6 +7,13 @@
   margin-left: 5px;
 }
 
+.brand{
+  color: #FFEA11;
+  text-transform: capitalize;
+  position: relative;
+  font-family: 'Courier New', monospace;
+}
+
 .navbar-nav .nav-link {
   color: #FFEA11;
   text-transform: capitalize;
@@ -42,7 +49,7 @@
 }
 
 .scrolled {
-  background-color: #6c8d93; 
+  background-color: #6c8d93;
 }
 
 .transparent {
