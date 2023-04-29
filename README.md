@@ -1,8 +1,15 @@
 # Angular Students Blog UI
 
 ## Introduction
-This project is a user interface design use 'Reactive Routing' for a students blog created with Angular.<br>
-It provides a clean and user-friendly interface for registering new student , viewing a list of students and their details.
+This project is a student management website use 'Reactive Routing' and 'json sever' for a students blog created with Angular.
+
+## Features
+1. Table with pagination of all students available in the api
+2. Get details card for each students by id 
+3. Register new Student with validation
+4. Update Student details with validation
+5. Delete student by id with delete confirmation before
+
 
 
 ## Installation
@@ -11,18 +18,28 @@ To view the UI design of this project, follow these steps:
 1. Clone the repository
 2. Install the dependencies with `npm install`
 3. Run the application with `ng serve`
+4. json-server --watch Database/data.json
 
 
 <div style="display:flex; justify-content:center;">
-  <img src="https://user-images.githubusercontent.com/63107268/235211827-e5910e0a-f2b1-4a6f-ae7f-fb11f82a169e.png" width="250" height="700" alt="Home">
+  <img src="https://user-images.githubusercontent.com/63107268/235277461-c730590d-a483-47cd-a4f1-abf595c17985.png" width="250" height="700" alt="Home">
 </div>
 
 <div style="display:flex; justify-content:center;">
-    <img src="https://user-images.githubusercontent.com/63107268/235212735-7928371c-9557-45fa-98fd-6860ece1127d.png" width="250" height="250" alt="Table of Students">
-  <img src="https://user-images.githubusercontent.com/63107268/235212012-46b1eeb4-d42e-4cda-b4c8-3ed27659dfd1.png" width="250" height="250" alt="Student Card">
-  <img src="https://user-images.githubusercontent.com/63107268/235212046-56858a8d-8b3c-436e-9f75-74f97024a2a8.png" width="250" height="250" alt="Register new Student with validation">
-  <img src="https://user-images.githubusercontent.com/63107268/235212125-41a72025-aec7-481b-a071-04bdb80d6d76.png" width="250" height="250" alt="404 not found">
+    <img src="https://user-images.githubusercontent.com/63107268/235277535-456fb176-287a-4a8a-8080-de07a0635ab2.png" width="250" height="250" alt="Table of Students">
+  <img src="https://user-images.githubusercontent.com/63107268/235277552-547f599a-3082-4e9e-9f94-6551c0cd3530.png" width="250" height="250" alt="Student Card">
+  <img src="(https://user-images.githubusercontent.com/63107268/235277472-fa36f2b6-bb1d-4de9-abfd-5b81cc7884c4.png" width="250" height="250" alt="Register new Student with validation">
+  <img src="https://user-images.githubusercontent.com/63107268/235277522-2cabdd7f-15f6-4cd6-9f18-b99a8fea2d70.png" width="250" height="250" alt="Update Student with validation">
+    <img src="https://user-images.githubusercontent.com/63107268/235277560-715e855b-ea5c-4f71-a32b-bbff6b5fedaf.png" width="250" height="250" alt="404 not found">
 </div>
+
+
+
+
+
+
+
+
 
 
 
