@@ -21,11 +21,9 @@ To view the UI design of this project, follow these steps:
 4. json-server --watch Database/data.json
 
 
-<div style="display: flex;">
-  <div style="flex: 1;">
-    <img src="https://user-images.githubusercontent.com/63107268/235277461-c730590d-a483-47cd-a4f1-abf595c17985.png" width="250" height="700" alt="Home">
-  </div>
-  <div style="display: flex; flex-wrap: wrap; justify-content: flex-start; flex: 1;">
+<div style="display:flex; flex-direction:row;">
+  <img src="https://user-images.githubusercontent.com/63107268/235277461-c730590d-a483-47cd-a4f1-abf595c17985.png" width="250" height="700" alt="Home">
+  <div style="display:flex; flex-direction:column; justify-content:space-between;">
     <img src="https://user-images.githubusercontent.com/63107268/235277535-456fb176-287a-4a8a-8080-de07a0635ab2.png" width="250" height="250" alt="Table of Students">
     <img src="https://user-images.githubusercontent.com/63107268/235277472-fa36f2b6-bb1d-4de9-abfd-5b81cc7884c4.png" width="250" height="250" alt="Student Card">
     <img src="https://user-images.githubusercontent.com/63107268/235277552-547f599a-3082-4e9e-9f94-6551c0cd3530.png" width="250" height="250" alt="Register new Student with validation ">
