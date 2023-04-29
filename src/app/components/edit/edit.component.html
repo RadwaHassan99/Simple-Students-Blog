@@ -9,17 +9,17 @@
             role="alert"
             style="display: none"
           >
-            Registration successful!
+            Updated successfully!
           </div>
           <div class="card-body p-md-5">
             <div class="row justify-content-center">
               <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
                 <h3 class="text-center fw-bold mb-5 mx-1 mx-md-4 mt-4">
-                  Add New Student
+                  Update Student Details
                 </h3>
                 <form
                   class="mx-1 mx-md-4"
-                  [formGroup]="registrationForm"
+                  [formGroup]="updatingForm"
                   (ngSubmit)="onSubmit()"
                 >
                   <div class="d-flex flex-row align-items-center mb-4">
@@ -30,28 +30,25 @@
                         formControlName="id"
                         class="form-control d-block"
                         placeholder="ID"
+                        readonly
                       />
                       <div
                         *ngIf="
-                          registrationForm.get('id')?.invalid &&
-                          (registrationForm.get('id')?.dirty ||
-                            registrationForm.get('id')?.touched)
+                          updatingForm.get('id')?.invalid &&
+                          (updatingForm.get('id')?.dirty ||
+                            updatingForm.get('id')?.touched)
                         "
                       >
-                      <small class="text-danger" *ngIf="registrationForm.get('id')?.hasError('alreadyExists')">
-                        ID already exists
-                      </small>
-
 
                         <small
                           class="text-danger"
                           *ngIf="
-                            registrationForm.get('id')?.hasError('required')
+                            updatingForm.get('id')?.hasError('required')
                           "
                         >
                           ID is required
                         </small>
-                        <small class="text-danger" *ngIf="registrationForm.get('id')?.hasError('min')">
+                        <small class="text-danger" *ngIf="updatingForm.get('id')?.hasError('min')">
                           ID must contain positive numbers only
                         </small>
                       </div>
@@ -69,22 +66,22 @@
                       />
                       <div
                         *ngIf="
-                          registrationForm.get('name')?.invalid &&
-                          (registrationForm.get('name')?.dirty ||
-                            registrationForm.get('name')?.touched)
+                          updatingForm.get('name')?.invalid &&
+                          (updatingForm.get('name')?.dirty ||
+                            updatingForm.get('name')?.touched)
                         "
                       >
                         <small
                           class="text-danger"
                           *ngIf="
-                            registrationForm.get('name')?.hasError('required')
+                            updatingForm.get('name')?.hasError('required')
                           "
                           >Name is required</small
                         >
                         <small
                           class="text-danger"
                           *ngIf="
-                            registrationForm.get('name')?.hasError('minlength')
+                            updatingForm.get('name')?.hasError('minlength')
                           "
                           >Name must be at least 3 characters long</small
                         >
@@ -103,22 +100,22 @@
                       />
                       <div
                         *ngIf="
-                          registrationForm.get('email')?.invalid &&
-                          (registrationForm.get('email')?.dirty ||
-                            registrationForm.get('email')?.touched)
+                          updatingForm.get('email')?.invalid &&
+                          (updatingForm.get('email')?.dirty ||
+                            updatingForm.get('email')?.touched)
                         "
                       >
                         <small
                           class="text-danger"
                           *ngIf="
-                            registrationForm.get('email')?.hasError('required')
+                            updatingForm.get('email')?.hasError('required')
                           "
                           >Email is required</small
                         >
                         <small
                           class="text-danger"
                           *ngIf="
-                            registrationForm.get('email')?.hasError('email')
+                            updatingForm.get('email')?.hasError('email')
                           "
                           >Email is invalid</small
                         >
@@ -137,26 +134,26 @@
                       />
                       <div
                         *ngIf="
-                          registrationForm.get('age')?.invalid &&
-                          (registrationForm.get('age')?.dirty ||
-                            registrationForm.get('age')?.touched)
+                          updatingForm.get('age')?.invalid &&
+                          (updatingForm.get('age')?.dirty ||
+                            updatingForm.get('age')?.touched)
                         "
                       >
                         <small
                           class="text-danger"
                           *ngIf="
-                            registrationForm.get('age')?.hasError('required')
+                            updatingForm.get('age')?.hasError('required')
                           "
                           >Age is required</small
                         >
                         <small
                           class="text-danger"
-                          *ngIf="registrationForm.get('age')?.hasError('min')"
+                          *ngIf="updatingForm.get('age')?.hasError('min')"
                           >Age must be at least 20 years</small
                         >
                         <small
                           class="text-danger"
-                          *ngIf="registrationForm.get('age')?.hasError('max')"
+                          *ngIf="updatingForm.get('age')?.hasError('max')"
                           >Age must not exceed 40 years</small
                         >
                       </div>
@@ -174,29 +171,29 @@
                       />
                       <div
                         *ngIf="
-                          registrationForm.get('phone')?.invalid &&
-                          (registrationForm.get('phone')?.dirty ||
-                            registrationForm.get('phone')?.touched)
+                          updatingForm.get('phone')?.invalid &&
+                          (updatingForm.get('phone')?.dirty ||
+                            updatingForm.get('phone')?.touched)
                         "
                       >
                         <small
                           class="text-danger"
                           *ngIf="
-                            registrationForm.get('phone')?.hasError('required')
+                            updatingForm.get('phone')?.hasError('required')
                           "
                           >Phone number is required</small
                         >
                         <small
                           class="text-danger"
                           *ngIf="
-                            registrationForm.get('phone')?.hasError('minlength')
+                            updatingForm.get('phone')?.hasError('minlength')
                           "
                           >Phone number must be 11 digits</small
                         >
                         <small
                           class="text-danger"
                           *ngIf="
-                            registrationForm.get('phone')?.hasError('maxlength')
+                            updatingForm.get('phone')?.hasError('maxlength')
                           "
                           >Phone number must be 11 digits</small
                         >
@@ -218,7 +215,7 @@
 
                   <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                     <button type="submit" class="btn btn-primary btn-lg">
-                      Register
+                      Update
                     </button>
                   </div>
                 </form>
@@ -227,7 +224,7 @@
                 class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2"
               >
                 <img
-                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
                   class="img-fluid d-none d-lg-block"
                   alt="Sample image"
                 />
@@ -239,3 +236,4 @@
     </div>
   </div>
 </section>
+

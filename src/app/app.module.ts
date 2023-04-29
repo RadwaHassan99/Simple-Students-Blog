@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgxPaginationModule } from 'ngx-pagination';
+
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -11,15 +14,11 @@ import { TableComponent } from './components/table/table.component';
 import { ErrorComponent } from './components/error/error.component';
 import { RouterModule,Routes  } from '@angular/router';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule} from '@angular/common/http';
+import { EditComponent } from './components/edit/edit.component';
 
 
-let routes:Routes = [
-  {path:"", component:HomeComponent},
-  {path:"students", component:TableComponent},
-  {path:"students/:id", component:DetailsComponent},
-  {path:"register", component:RegisterComponent},
-  {path:"**", component:ErrorComponent}
-]
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,13 +29,17 @@ let routes:Routes = [
     DetailsComponent,
     TableComponent,
     ErrorComponent,
+    EditComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     RouterModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(routes),
+    AppRoutingModule,
+    HttpClientModule,
+    NgbModule,
+    NgxPaginationModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

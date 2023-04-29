@@ -1,7 +1,7 @@
 .padding {
   padding-top: 7rem !important;
+  width: 95%;
   margin: 0 auto;
-  width: 80%;
 }
 
 .user-card-full {
@@ -57,12 +57,6 @@ h6 {
 
 .card .card-block p {
   line-height: 25px;
-}
-
-@media only screen and (min-width: 1400px) {
-  p {
-    font-size: 14px;
-  }
 }
 
 .card-block {
@@ -146,4 +140,10 @@ ul.social-link li a {
   margin-right: 10px;
   margin-bottom: 10px;
   text-decoration: none;
+}
+
+@media only screen and (min-width: 1400px) {
+  p {
+    font-size: 14px;
+  }
 }
