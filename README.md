@@ -1,4 +1,4 @@
-# Angular Students Blog UI
+# Angular Students Blog 
 
 ## Introduction
 This project is a student management website use `Reactive Routing` and `json sever` for a students blog created with Angular.
